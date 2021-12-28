@@ -1,18 +1,21 @@
 //Header
 const menu = document.querySelector('.menu');
-const nav = document.querySelector('nav ul');
-const menuOn = document.getElementsByTagName('span');
+const nav = document.querySelector('nav #link');
+const menuOn = document.querySelectorAll('.menu span');
+const closed = document.querySelector('.menu');
+
 
 menu.addEventListener('click', function () {
     nav.classList.toggle('slide');
-});
+    closed.classList.toggle('actived');
+})
+
 
 //Search btn
 const searchBox = document.querySelector(".search-box");
 const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");
 const searchInput = document.querySelector("input");
-const searchData = document.querySelector(".search-data");
 searchBtn.onclick =()=>{
     searchBox.classList.add("active");
     searchBtn.classList.add("active");
