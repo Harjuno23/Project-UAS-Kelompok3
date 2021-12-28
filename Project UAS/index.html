@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Movie Finder</title>
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#search">search</a></li>
+                <li><a href="#genre list">genre list</a></li>
+                <li><a href="#movie">movie</a></li>
+                <li><a href="#about us">about us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section id="search">
+        <div class="text">
+            <h2>Easy to find</h2>
+            <h1>Movies</h1>
+        </div>
+    </section>
+
+    <section id="genre list">
+        <div class="search-box">
+            <form id="form">
+                <input type="text" placeholder="Search" id="search" class="search">
+            </form>
+
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+    
+            <div class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="movie">
+        <div id="genre-icon">Show Genre List</div>
+
+        <div id="tags" class="showed"></div>
+    </section>
+
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+    </div>
+
+    <main id="main"></main>
+
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div>
+
+    <!-- About -->
+    <section id="about us">
+    <section id="team">
+      <h1 class="heading">
+          <!--icon-------->
+          <i></i> About Us
+      </h1>
+      <!--container-------->
+      <div class="container">
+          <!--box-1-->
+          <div class="box">
+              <!--top-bar-------->
+              <div class="top-bar"></div>
+              <!--nav-------->
+              <div class="nav">
+                  <!--verify-icon------>
+                  <i class="verify fas fa-check-circle"></i>
+                  <!--heart-btn-------------->
+                  <input class="heart-btn" type="checkbox" id="heart-btn1">
+                  <label  class="heart" for="heart-btn1"></label>
+              </div>
+              <!--img and details------>
+              <div class="details">
+                  <img src="images/foto.jpg" alt="">
+                  <strong>Harjuno</strong>
+                  <p>Yogyakarta</p>
+                  <p>harjuno.2018@student.uny.ac.id</p>
+              </div>
+              <!--view-btns------------->
+              <div class="btn">
+                  <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+                  <a href="#"><i class="fas fa-eye"></i>View</a>
+              </div>
+          </div>
+          <!--box-2-->
+          <div class="box">
+              <!--top-bar-------->
+              <div class="top-bar"></div>
+              <!--nav-------->
+              <div class="nav">
+                  <!--verify-icon------>
+                  <i class="verify fas fa-check-circle"></i>
+                  <!--heart-btn-------------->
+                  <input class="heart-btn" type="checkbox" id="heart-btn2">
+                  <label  class="heart" for="heart-btn2"></label>
+              </div>
+              <!--img and details------>
+              <div class="details">
+                  <img src="images/foto.jpg" alt="">
+                  <strong>Choirul Fatihin</strong>
+                  <p>Bangka Belitung</p>
+                  <p>choirulfatihin.2019@student.uny.ac.id</p>
+              </div>
+              <!--view-btns------------->
+              <div class="btn">
+                  <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+                  <a href="#"><i class="fas fa-eye"></i>View</a>
+              </div>
+          </div>
+          <!--box-3-->
+          <div class="box">
+              <!--top-bar-------->
+              <div class="top-bar"></div>
+              <!--nav-------->
+              <div class="nav">
+                  <!--verify-icon------>
+                  <i class="verify fas fa-check-circle"></i>
+                  <!--heart-btn-------------->
+                  <input class="heart-btn" type="checkbox" id="heart-btn3">
+                  <label  class="heart" for="heart-btn3"></label>
+              </div>
+              <!--img and details------>
+              <div class="details">
+                  <img src="images/foto.jpg" alt="">
+                  <strong>Cindy Ameliana</strong>
+                  <p>Jakarta</p>
+                  <p>cindyameliana.2019@student.uny.ac.id</p>
+              </div>
+              <!--view-btns------------->
+              <div class="btn">
+                  <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+                  <a href="#"><i class="fas fa-eye"></i>View</a>
+              </div>
+          </div>
+          <!--box-4-->
+          <div class="box">
+              <!--top-bar-------->
+              <div class="top-bar"></div>
+              <!--nav-------->
+              <div class="nav">
+                  <!--verify-icon------>
+                  <i class="verify fas fa-check-circle"></i>
+                  <!--heart-btn-------------->
+                  <input class="heart-btn" type="checkbox" id="heart-btn4">
+                  <label  class="heart" for="heart-btn4"></label>
+              </div>
+              <!--img and details------>
+              <div class="details">
+                  <img src="images/foto.jpg" alt="">
+                  <strong>Raihana Sheila Arrafi'</strong>
+                  <p>Sleman</p>
+                  <p>raihanasheila.2019@student.uny.ac.id</p>
+              </div>
+              <!--view-btns------------->
+              <div class="btn">
+                  <a href="#"><i class="fas fa-clipboard-list"></i>Assign</a>
+                  <a href="#"><i class="fas fa-eye"></i>View</a>
+              </div>
+          </div>
+      </div>
+  </section>
+    </section>
+
+    <!-- Footer-->
+
+    <!-- scroll-up -->
+    <a href="#" class="scrollup" id="scroll-up"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

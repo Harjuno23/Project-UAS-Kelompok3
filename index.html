@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Movie Finder</title>
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="#home">MOVIE<span>KU</span></a></h1>
+            </div>
+            <ul id="link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#src">Movie</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+            <div class="menu">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="wrapper" id="home">
+        <div class="home">
+            <div class="text">
+                <p>Easy to find <br>Movies</p>
+                
+                <a href="#src" class="btn">Get Started</a>
+            </div>
+
+            <div class="img">
+                <div class="sub-icons">
+                    <img src="assets/images/popcorn.png" alt="">
+                    <img src="assets/images/ticket.png" alt="">
+                    <img src="assets/images/glasess.png" alt="">
+                    <img src="assets/images/theater.png" alt="">
+                    <img src="assets/images/drink.png" alt="">
+                </div>
+                <img class="movie-icon" src="assets/images/movie.png" alt="">
+            </div>
+        </div>
+        <div class="wave">
+            <img src="assets/images/wave.png" alt="">
+        </div>
+    </div>
+    
+
+    <!-- Content -->
+    <div id="src"></div>
+    
+    <div class="search-box">
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+    
+        <div class="cancel-icon">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <div id="genre-icon">Show Genre List</div>
+
+    <div id="tags" class="showed"></div>
+
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+    </div>
+
+    <main id="main"></main>
+
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+            <section id="team">
+                <h1 class="heading">
+                    <i></i>About Us
+                </h1>
+
+                <div class="container">
+                    <div class="box">
+                        <div class="top-bar"></div>
+
+                        <div class="details">
+                            <img src="assets/images/foto.jpg" alt="">
+                            <strong>Harjuno</strong>
+                            <p>Yogyakarta</p>
+                            <p>harjuno.2018@student.uny.ac.id</p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="top-bar"></div>
+
+                        <div class="details">
+                            <img src="assets/images/foto.jpg" alt="">
+                            <strong>Choirul Fatihin</strong>
+                            <p>Bangka Belitung</p>
+                            <p>choirulfatihin.2019@student.uny.ac.id</p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top-bar"></div>
+
+                        <div class="details">
+                            <img src="assets/images/foto.jpg" alt="">
+                            <strong>Cindy Ameliana</strong>
+                            <p>Jakarta</p>
+                            <p>cindyameliana.2019@student.uny.ac.id</p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top-bar"></div>
+
+                        <div class="details">
+                            <img src="assets/images/foto.jpg" alt="">
+                            <strong>Raihana Sheila Arrafi'</strong>
+                            <p>Sleman</p>
+                            <p>raihanasheila.2019@student.uny.ac.id</p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer-->
+
+    <!-- scroll-up -->
+    <a href="#" class="scrollup" id="scroll-up"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
