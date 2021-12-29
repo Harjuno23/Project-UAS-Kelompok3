@@ -16,6 +16,7 @@ const searchBox = document.querySelector(".search-box");
 const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");
 const searchInput = document.querySelector("input");
+const searchData = document.querySelector(".search-data");
 searchBtn.onclick =()=>{
     searchBox.classList.add("active");
     searchBtn.classList.add("active");
@@ -139,16 +140,13 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const searchTerm = search.value;
-    const searchBox = document.querySelector('.fas');
     selectedGenre=[];
     setGenre();
-    searchBox.addEventListener('click', function () {
-        if(searchTerm) {
+    if(searchTerm) {
             getMovies(searchURL+'&query='+searchTerm)
         }else{
             getMovies(API_URL);
         }
-    })
 })
 
 //genre icon list

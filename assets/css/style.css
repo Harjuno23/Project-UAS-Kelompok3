@@ -340,9 +340,9 @@ nav ul a:hover {
     line-height: 50px;
     width: 50px;
     font-size: 20px;
-    background: var(--color2);
     color: var(--white);
     transform: translateY(-50%) rotate(360deg);
+    z-index: -2;
 }
 
 .search-box .cancel-icon {

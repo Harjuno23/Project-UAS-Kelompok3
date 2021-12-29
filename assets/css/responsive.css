@@ -31,11 +31,6 @@
     nav {
         justify-content: space-between;
     }
-
-    nav #link {
-        opacity: 0;
-    }
-
     nav ul {
         position: absolute;
         top: 48px;
@@ -46,13 +41,15 @@
         justify-content: space-evenly;
         background-color: var(--color3);
         transition: all 1s;
+        transform: translateY(100%);
+        width: 100%;
     }
 
     .menu {
         display: flex;
     }
 
-    nav #link.slide {
-        opacity: 1;
+    nav ul.slide {
+        transform: translateY(0);
     }
 }
