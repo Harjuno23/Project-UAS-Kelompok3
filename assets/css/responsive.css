@@ -45,8 +45,16 @@
         width: 100%;
     }
 
+    nav .bar {
+        width: 100%;
+    }
+
     .menu {
         display: flex;
+    }
+
+    .home .img {
+        width: 0;
     }
 
     nav ul.slide {

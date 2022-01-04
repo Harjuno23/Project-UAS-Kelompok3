@@ -70,6 +70,10 @@ nav ul a:hover {
     width: 60%;
 }
 
+.logo h1 {
+    font-size: 25px;
+}
+
 .logo h1 a {
     color: var(--white);
 }
@@ -132,12 +136,12 @@ nav ul a:hover {
 .home {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 50px 100px 0;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-.text {
-    padding-right: 150px;
+.home .text h1 {
+    margin: auto;
     color: var(--white);
     text-align: center;
     font-family: "Roboto";
@@ -149,34 +153,48 @@ nav ul a:hover {
     0 0 50px var(--color3),
     0 0 50px var(--color3);
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 40px;
+    line-height: 46px;
+    color: #fff;
     margin-top: 100px;
     z-index: 10;
 }
 
-.text p {
-    font-size: 28px;
-    line-height: 46px;
-    color: #fff;
+.home .text p {
+    margin: 50px auto;
+    width: 60%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-.text .btn {
+.home .text p span {
+    color: var(--color4);
+}
+
+.home .text .btn {
     position: relative;
-    display: inline-block;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: var(--white);
-    text-decoration: none;
+    display: flex;
+    width: 50%;
+    justify-content: center;
     padding: 18px 30px;
     letter-spacing: 2px;
-    font-weight: 500;
-    margin-top: 60px;
+    font-weight: bolder;
+    margin: 40px auto;
     background-color: var(--color3);
     border-radius: 50px;
     cursor: pointer;
+    z-index: 5;
 }
 
-.img {
+.home .text .btn a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.home .img {
     position: relative;
     width: 500px;
     height: 500px;
