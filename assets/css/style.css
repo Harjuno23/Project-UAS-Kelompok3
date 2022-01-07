@@ -3,12 +3,14 @@
 
 * {
     margin: 0;
+    padding: 0;
     outline: none;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+    color: var(--white);
 }
 
 :root {
@@ -40,7 +42,7 @@ nav {
     background-color: var(--color3);
     padding: 10px 50px 10px 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    z-index: 100;
+    z-index: 200;
 }
 
 nav ul {
@@ -54,13 +56,12 @@ nav ul {
 nav ul a {
     text-decoration: none;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: bold;
     color: var(--white);
 }
 
 nav ul a:hover {
-    text-decoration: underline;
-    font-weight: bolder;
+    color: var(--color4);
     cursor: pointer;
     transition: .4s;
 }
@@ -97,7 +98,7 @@ nav ul a:hover {
     width: 28px;
     height: 5px;
     border-radius: 1px;
-    background-color: white;
+    background-color: var(--white);
     transition: all 0.5s;
 }
 
@@ -122,9 +123,6 @@ nav ul a:hover {
     transform: rotate(-45deg);
 }
 
-.menu-on {
-    background-color: red;
-}
 
 /* home */
 .wrapper {
@@ -765,7 +763,108 @@ main {
 
 
 /* footer */
+footer {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+footer .menufot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 10px 20px 10px;
+    flex-wrap: wrap;
+}
+
+footer .menufot li {
+    list-style: none;
+}
+
+footer .menufot li a {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--white);
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+footer .menufot li a:hover {
+    color: var(--black);
+}
+
+footer p {
+    color: var(--white);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wavefot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave2.png);
+    background-size: 1000px 100px;
+    background-color: var(--color1);
+}
+
+footer .wavefot#wave1 {
+    z-index: 1;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wavefot#wave2 {
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wavefot#wave3 {
+    z-index: 1;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wavefot#wave4 {
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
 
 
 

@@ -1,7 +1,7 @@
 //Header
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('nav #link');
-const menuOn = document.querySelectorAll('.menu span');
+const menuOn = document.getElementsByClassName('.close');
 const closed = document.querySelector('.menu');
 
 
